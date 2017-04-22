@@ -1,15 +1,12 @@
-﻿using JScript_vsdoc_Stub_Generator_11.Symbols;
-using JScriptStubOptions;
+﻿using DocStubsJs2017.Symbols;
+using DocStubsJsOptions;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Editor;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
-namespace JScript_vsdoc_Stub_Generator_11
+namespace DocStubsJs2017
 {
     class StubUtils
     {

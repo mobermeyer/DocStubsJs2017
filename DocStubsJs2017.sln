@@ -12,9 +12,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestFiles", "TestFiles", "{
 		TestFiles\View.cshtml = TestFiles\View.cshtml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JScript vsdoc Stub Generator 11", "JScript vsdoc Stub Generator 11\JScript vsdoc Stub Generator 11.csproj", "{065A983A-E2F6-47AC-B1D1-8ED71C85E9D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocStubsJs2017", "DocStubsJs2017\DocStubsJs2017.csproj", "{065A983A-E2F6-47AC-B1D1-8ED71C85E9D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JScriptStubOptions", "JScriptStubOptions\JScriptStubOptions.csproj", "{9DD70AD0-4868-4308-8651-DC2D30C48F9D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocStubsJsOptions", "DocStubsJsOptions\DocStubsJsOptions.csproj", "{9DD70AD0-4868-4308-8651-DC2D30C48F9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

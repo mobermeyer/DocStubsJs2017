@@ -2,8 +2,8 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
     <Identity Id="5faf6911-0879-4057-adc1-b8c9575af159" Version="1.0" Language="en-US" Publisher="Michael Obermeyer, Jr." />
-    <DisplayName>JScriptStubOptions</DisplayName>
-    <Description>Provides a way to make customizeable options for the JScript vsdoc Stub Generator.</Description>
+    <DisplayName>DocStubJsOptions</DisplayName>
+    <Description>Provides a way to make customizeable options for DocStubsJs.</Description>
   </Metadata>
   <Installation InstalledByMsi="false">
     <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[15.0]" />

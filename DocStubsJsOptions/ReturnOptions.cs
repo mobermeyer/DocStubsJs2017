@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
 
-namespace JScriptStubOptions
+namespace DocStubsJsOptions
 {
     public class ReturnOptions
     {
@@ -209,18 +209,18 @@ namespace JScriptStubOptions
             }
         }
 
-        private const string PROP_LOCATION = "DialogPage\\JScriptStubOptions.JScriptStubOptions";
+        private const string PROP_LOCATION = "DialogPage\\DocStubsJsOptions.DocStubsJsOptions";
         private bool UpdateSetting(string name, bool defaultValue)
         {
             using (var regKey = VSRegistry.RegistryRoot(__VsLocalRegistryType.RegType_UserSettings))
             {
                 if (regKey == null) return defaultValue;
 
-                using (var jScriptKey = regKey.OpenSubKey("DialogPage\\JScriptStubOptions.JScriptStubOptions"))
+                using (var docStubsKey = regKey.OpenSubKey("DialogPage\\DocStubsJsOptions.DocStubsJsOptions"))
                 {
-                    if (jScriptKey == null) return defaultValue;
+                    if (docStubsKey == null) return defaultValue;
 
-                    var prop = jScriptKey.GetValue(name) as string;
+                    var prop = docStubsKey.GetValue(name) as string;
 
                     if (prop == null) return defaultValue;
 
@@ -240,11 +240,11 @@ namespace JScriptStubOptions
             {
                 if (regKey == null) return defaultValue;
 
-                using (var jScriptKey = regKey.OpenSubKey("DialogPage\\JScriptStubOptions.JScriptStubOptions"))
+                using (var docStubsKey = regKey.OpenSubKey("DialogPage\\DocStubsJsOptions.DocStubsJsOptions"))
                 {
-                    if (jScriptKey == null) return defaultValue;
+                    if (docStubsKey == null) return defaultValue;
 
-                    var prop = jScriptKey.GetValue(name);
+                    var prop = docStubsKey.GetValue(name);
 
                     if (prop == null) return defaultValue;
 
@@ -260,10 +260,10 @@ namespace JScriptStubOptions
             }
         }
 
-        // Updates a setting specific to the JScript vsdoc Stub Generator options
+        // Updates a setting specific to the DocStubsJs options
         private string UpdateSetting(string name, string defaultValue)
         {
-            return GetSetting("DialogPage\\JScriptStubOptions.JScriptStubOptions", name, defaultValue);
+            return GetSetting("DialogPage\\DocStubsJsOptions.DocStubsJsOptions", name, defaultValue);
         }
 
         // Gets any setting from the VisualStudio registry.
@@ -273,11 +273,11 @@ namespace JScriptStubOptions
             {
                 if (regKey == null) return defaultValue;
 
-                using (var jScriptKey = regKey.OpenSubKey(path))
+                using (var docStubsJsKey = regKey.OpenSubKey(path))
                 {
-                    if (jScriptKey == null) return defaultValue;
+                    if (docStubsJsKey == null) return defaultValue;
 
-                    var prop = jScriptKey.GetValue(name);
+                    var prop = docStubsJsKey.GetValue(name);
 
                     if (prop == null) return defaultValue;
 

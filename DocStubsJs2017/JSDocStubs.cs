@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.Text.Editor;
 using System;
 using System.Text.RegularExpressions;
 
-namespace JScript_vsdoc_Stub_Generator_11
+namespace DocStubsJs2017
 {
     class JSDocStubs
     {
@@ -12,7 +12,7 @@ namespace JScript_vsdoc_Stub_Generator_11
         const string SUMMARY_OPEN = "<summary>";
         const string SUMMARY_CLOSE = "</summary>";
         string tabs = "";
-        private const string errorMsgPrefix = "JScript vsdoc Stub Generator has encountered an error:\n";
+        private const string errorMsgPrefix = "DocStubsJs has encountered an error:\n";
         private string contentType = string.Empty;
 
         public JSDocStubs(IWpfTextView view)

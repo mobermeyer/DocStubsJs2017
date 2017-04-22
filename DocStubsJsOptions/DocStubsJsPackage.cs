@@ -9,7 +9,7 @@ using Microsoft.VisualStudio.Shell.Interop;
 using Microsoft.VisualStudio.OLE.Interop;
 using Microsoft.VisualStudio.Shell;
 
-namespace JScriptStubOptions
+namespace DocStubsJsOptions
 {
     /// <summary>
     /// This is the class that implements the package exposed by this assembly.
@@ -24,15 +24,15 @@ namespace JScriptStubOptions
     // This attribute tells the PkgDef creation utility (CreatePkgDef.exe) that this class is
     // a package.
     [PackageRegistration(UseManagedResourcesOnly = true)]
-    [ProvideOptionPageAttribute(typeof(JScriptStubOptions), "DocStubsJs", "General", 101, 106, true)]
-    [ProvideProfileAttribute(typeof(JScriptStubOptions), "JScriptDocStubs", "JScriptDocStubsOptions", 101, 106, true, DescriptionResourceID = 101,
-        GroupName = "JavaScriptDocumentStubs",
-        ResourcePackageGuid = GuidList.guidJScriptStubOptionsPkgString)]    
+    [ProvideOptionPage(typeof(DocStubsJsOptions), "DocStubsJs", "General", 101, 106, true)]
+    [ProvideProfile(typeof(DocStubsJsOptions), "DocStubsJs", "DocStubsJsOptions", 101, 106, true, DescriptionResourceID = 101,
+        GroupName = "DocStubsJs",
+        ResourcePackageGuid = GuidList.guidDocStubsJsOptionsPkgString)]    
     // This attribute is used to register the information needed to show this package
     // in the Help/About dialog of Visual Studio.
     [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)]
-    [Guid(GuidList.guidJScriptStubOptionsPkgString)]
-    public sealed class JScriptStubOptionsPackage : Package
+    [Guid(GuidList.guidDocStubsJsOptionsPkgString)]
+    public sealed class DocStubsJsPackage : Package
     {
         /// <summary>
         /// Default constructor of the package.
@@ -41,7 +41,7 @@ namespace JScriptStubOptions
         /// not sited yet inside Visual Studio environment. The place to do all the other 
         /// initialization is the Initialize method.
         /// </summary>
-        public JScriptStubOptionsPackage()
+        public DocStubsJsPackage()
         {
             Trace.WriteLine(string.Format(CultureInfo.CurrentCulture, "Entering constructor for: {0}", this.ToString()));
         }

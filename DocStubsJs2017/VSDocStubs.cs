@@ -1,15 +1,9 @@
-﻿using System;
-using System.Text.RegularExpressions;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Media;
-using Microsoft.VisualStudio.Text;
+﻿using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Editor;
-using Microsoft.VisualStudio.Text.Formatting;
-using JScriptStubOptions;
-using System.Linq;
+using System;
+using System.Text.RegularExpressions;
 
-namespace JScript_vsdoc_Stub_Generator_11
+namespace DocStubsJs2017
 {
     ///<summary>
     ///Auto generates vsdoc comments on triple slash in JavaScript files.
@@ -21,7 +15,7 @@ namespace JScript_vsdoc_Stub_Generator_11
         const string SUMMARY_OPEN = "<summary>";
         const string SUMMARY_CLOSE = "</summary>";
         string tabs = "";
-        private const string errorMsgPrefix = "JScript vsdoc Stub Generator has encountered an error:\n";
+        private const string errorMsgPrefix = "DocStubsJs has encountered an error:\n";
 
         public VSDocStubs(IWpfTextView view)
         {

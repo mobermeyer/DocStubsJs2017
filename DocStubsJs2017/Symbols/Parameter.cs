@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JScript_vsdoc_Stub_Generator_11.Symbols
+namespace DocStubsJs2017.Symbols
 {
     /// <summary>
     /// Represents a JavaScript or TypeScript function parameter

@@ -1,9 +1,8 @@
-﻿using System;
-using System.ComponentModel.Composition;
-using Microsoft.VisualStudio.Text.Editor;
+﻿using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.Utilities;
+using System.ComponentModel.Composition;
 
-namespace JScript_vsdoc_Stub_Generator_11
+namespace DocStubsJs2017
 {
     #region Adornment Factory
     /// <summary>
@@ -16,19 +15,19 @@ namespace JScript_vsdoc_Stub_Generator_11
     [ContentType("HTML")]
     [ContentType("TypeScript")]
     [TextViewRole(PredefinedTextViewRoles.Interactive)]
-    internal sealed class JScript_vsdoc_Stub_Generator_11Factory : IWpfTextViewCreationListener
+    internal sealed class DocStubsJsFactory : IWpfTextViewCreationListener
     {
         /// <summary>
         /// Defines the adornment layer for the adornment. This layer is ordered 
         /// after the selection layer in the Z-order
         /// </summary>
         [Export(typeof(AdornmentLayerDefinition))]
-        [Name("JScript_vsdoc_Stub_Generator_11")]
+        [Name("DocStubsJs")]
         [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]
         public AdornmentLayerDefinition editorAdornmentLayer = null;
-                
+
         /// <summary>
-        /// Instantiates a JScript_vsdoc_Stub_Generator_11 manager when a textView is created.
+        /// Instantiates a DocStubsJs manager when a textView is created.
         /// </summary>
         /// <param name="textView">The <see cref="IWpfTextView"/> upon which the adornment should be placed</param>
         public void TextViewCreated(IWpfTextView textView)

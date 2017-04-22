@@ -25,8 +25,8 @@
     <ProjectGuid>{065A983A-E2F6-47AC-B1D1-8ED71C85E9D5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>JScript_vsdoc_Stub_Generator_11</RootNamespace>
-    <AssemblyName>JScript vsdoc Stub Generator 11</AssemblyName>
+    <RootNamespace>DocStubsJs2017</RootNamespace>
+    <AssemblyName>DocStubsJs2017</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
@@ -52,6 +52,7 @@
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
     <DeployExtension>False</DeployExtension>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualStudio.CoreUtility, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -73,7 +74,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="JScript vsdoc Stub Generator 11Factory.cs" />
+    <Compile Include="DocStubsJsFactory.cs" />
     <Compile Include="JSDocStubs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StubUtils.cs" />
@@ -97,10 +98,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\JScriptStubOptions\JScriptStubOptions.csproj">
+    <ProjectReference Include="..\DocStubsJsOptions\DocStubsJsOptions.csproj">
       <Project>{9dd70ad0-4868-4308-8651-dc2d30c48f9d}</Project>
-      <Name>JScriptStubOptions</Name>
-      <IncludeOutputGroupsInVSIX>BuiltProjectOutputGroup%3bBuiltProjectOutputGroupDependencies%3bGetCopyToOutputDirectoryItems%3bSatelliteDllsProjectOutputGroup%3bPkgdefProjectOutputGroup%3bVSIXContainerProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+      <Name>DocStubsJsOptions</Name>
+      <IncludeOutputGroupsInVSIX>VSIXContainerProjectOutputGroup%3bBuiltProjectOutputGroup%3bBuiltProjectOutputGroupDependencies%3bGetCopyToOutputDirectoryItems%3bSatelliteDllsProjectOutputGroup%3bPkgdefProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
       <IncludeOutputGroupsInVSIXLocalOnly>DebugSymbolsProjectOutputGroup%3b</IncludeOutputGroupsInVSIXLocalOnly>
     </ProjectReference>
   </ItemGroup>

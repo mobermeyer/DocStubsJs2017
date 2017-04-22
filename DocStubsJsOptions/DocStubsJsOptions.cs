@@ -6,15 +6,15 @@ using System.Runtime.InteropServices;
 using Microsoft.VisualStudio.Shell;
 using System.Windows.Forms.ComponentModel.Com2Interop;
 
-namespace JScriptStubOptions
+namespace DocStubsJsOptions
 {
     public enum ReturnTagGenerationSetting
     {
         Auto, Always, Never
     }
-    [Guid(GuidList.guidJScriptStubOptionsCmdSetString)]
+    [Guid(GuidList.guidDocStubsJsOptionsCmdSetString)]
     [ComVisible(true)]
-    class JScriptStubOptions : DialogPage
+    class DocStubsJsOptions : DialogPage
     {
 
         #region Properties
