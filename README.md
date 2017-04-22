@@ -1,10 +1,10 @@
 # DocStubsJs
-An extension for Visual Studio 2012+ to auto generate documentation comment stubs for JSDoc and VSDoc in JavaScript and TypeScript editors.
+An extension for Visual Studio 2017 to auto generate documentation comment stubs for JSDoc and VSDoc in JavaScript and TypeScript editors.
 
 
 ## Contributing
 
-In order to run Visual Studio's plugin development environment for this extension, you will need Visual Studio 2015 Professional (Ultimate or Premium work, too). You will also need the [SDK](https://www.microsoft.com/en-us/download/details.aspx?id=30668) for Visual Studio 2012 installed, too.
+In order to run Visual Studio's plugin development environment for this extension, you will need Visual Studio 2017 Professional with the extensibility tools included.
 
 ### How it works
 
